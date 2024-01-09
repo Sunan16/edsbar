@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="640.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sunan.systemStoreDesk.gui.init.InitController">
+   <children>
+      <Pane layoutX="23.0" layoutY="46.0" prefHeight="134.0" prefWidth="448.0" style="-fx-background-color: efefef; -fx-background-radius: 7;">
+         <children>
+            <Label layoutX="17.0" layoutY="14.0" text="Bem-vindo!">
+               <font>
+                  <Font name="Arial Black" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="70.0" text="Sistema iniciado, procedimentos prontos para realização" textFill="#5e5e5e">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl" layoutX="17.0" layoutY="94.0" opacity="0.9" text="Segunda-feira, 30 de Janeiro de 2024" textFill="#750064">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow height="30.0" radius="14.5" width="30.0">
+               <color>
+                  <Color red="0.7105262875556946" green="0.7105262875556946" blue="0.7105262875556946" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+      <MenuBar prefHeight="26.0" prefWidth="1100.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Principal">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Inicio" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ferramentas">
+            <items>
+                  <Menu mnemonicParsing="false" text="Categorias">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Alterar" />
+                        <MenuItem mnemonicParsing="false" text="Cadastrar" />
+                        <MenuItem mnemonicParsing="false" text="Listar" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Clientes">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Alterar" />
+                        <MenuItem mnemonicParsing="false" text="Cadastrar" />
+                        <MenuItem mnemonicParsing="false" text="Listar" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Produtos">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Alterar" />
+                        <MenuItem mnemonicParsing="false" text="Cadastrar" />
+                        <MenuItem mnemonicParsing="false" text="Listar" />
+                     </items>
+                  </Menu>
+              <MenuItem mnemonicParsing="false" text="Registrar pedido" />
+                  <MenuItem mnemonicParsing="false" text="Informações de hoje" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ajuda">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Informações">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+        </menus>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MenuBar>
+   </children>
+</AnchorPane>

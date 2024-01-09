@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>468</x>
+      <y>252</y>
+      <w>189</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>Order
+--
+- id: Long &lt;&lt;PK&gt;&gt;
+- moment: Date
+- orderStatus: OrderStatus
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>801</x>
+      <y>243</y>
+      <w>144</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>Client
+--
+- id: Long &lt;&lt;PK&gt;&gt;
+- name: String
+- phone: String
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>468</x>
+      <y>423</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Payment
+--
+- id: Long &lt;&lt;PK&gt;&gt;
+- moment: Date
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>54</x>
+      <y>243</y>
+      <w>144</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>Product
+--
+- id: Long &lt;&lt;PK&gt;&gt;
+- name: String
+- size: String
+- description: String
+- price: Double
+- size: String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>54</x>
+      <y>459</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Category
+--
+- id: Long &lt;&lt;PK&gt;&gt;
+- name: String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>189</x>
+      <y>288</y>
+      <w>297</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..*
+m2=*</panel_attributes>
+    <additional_attributes>10.0;10.0;310.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>648</x>
+      <y>288</y>
+      <w>171</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=0..1</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>558</x>
+      <y>324</y>
+      <w>45</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>135</x>
+      <y>360</y>
+      <w>45</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=*
+m2=1..*</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>333</x>
+      <y>288</y>
+      <w>27</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=.
+</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>279</x>
+      <y>360</y>
+      <w>135</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>OrderItem
+--
+- id: Long &lt;&lt;PK&gt;&gt;
+- quantity: Integer
+- price: Double
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>54</x>
+      <y>540</y>
+      <w>216</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>72</x>
+      <y>549</y>
+      <w>180</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;ENUM&gt;&gt;
+OrderStatus
+--
+- WAINT_PAYMENT: int
+- PAID: int
+- SHIPPED: int
+- DELIVERED: int
+- CANCELED: int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>405</x>
+      <y>261</y>
+      <w>54</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>- orders
+fg=red
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>207</x>
+      <y>261</y>
+      <w>54</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>- items
+
+fg=red
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>666</x>
+      <y>261</y>
+      <w>54</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>- orders
+fg=red
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>738</x>
+      <y>261</y>
+      <w>54</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>- client
+fg=red
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>72</x>
+      <y>378</y>
+      <w>63</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>- products
+
+fg=red
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>63</x>
+      <y>423</y>
+      <w>72</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>- categories
+fg=red
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>594</x>
+      <y>342</y>
+      <w>54</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>- order
+fg=red
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>594</x>
+      <y>387</y>
+      <w>72</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>- payment
+fg=red
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>63</x>
+      <y>189</y>
+      <w>108</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Model Domain
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>783</x>
+      <y>423</y>
+      <w>180</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>Address
+--
+- id: Long &lt;&lt;PK&gt;&gt;
+- cep: String
+- street: String
+- number: String
+- neighborhood: String
+- city: String
+- frete: Double
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>864</x>
+      <y>315</y>
+      <w>45</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>909</x>
+      <y>333</y>
+      <w>63</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>- client
+fg=red
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>909</x>
+      <y>387</y>
+      <w>63</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>- address
+fg=red
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
