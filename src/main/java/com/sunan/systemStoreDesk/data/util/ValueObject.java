@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public abstract class ValueObject implements Serializable{
     
-    private long id;
+    private Long id;
     private String description;
 
     public ValueObject(){}
@@ -54,7 +54,7 @@ public abstract class ValueObject implements Serializable{
 
     @Override
     public String toString() {
-        return "[id: " + this.id + "\n" + "description: " + this.description + "]";
+        return "[id: " + this.id + ",\n" + "description: " + this.description + "]";
     }
 
 }
