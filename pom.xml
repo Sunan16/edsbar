@@ -15,6 +15,7 @@
 	<name>systemStoreDesk</name>
 	<description>Sistema para vendas do Restaurante Ed's Bar</description>
 	<properties>
+	
 		<java.version>21</java.version>
 
 		<!-- Dependencies -->
