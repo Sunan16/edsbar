@@ -1,53 +1,60 @@
 *! Cardápio Ed's Bar do Dia !* 
-_*Válido: 5/1/2024*_
+_*2/2/2024*_
 
-~-=.-=.-=.-=.-=.-=.-=.~ *$* ~.=-.=-.=-.=-.=-.=-.=-~
-       _*📆🍽 Promoção do Dia 🍽📆*_
+-------------------------------
+      _*🇧🇷🇮🇹 PARMEGIANAS E EMPANADOS 🇮🇹🇧🇷_*
+-------------------------------
 
-1 | *Strogonoff*
-_Tamanho_: *M* | R$ *19.99*
+11 | *Bife à Parmegiana*
+_Tamanho_: *M* | R$ *20.0*
 
-5 | *Baião de 2*
-_Tamanho_: *P* | R$ *19.99*
+-------------------------------
+      _*🍟 FRITURAS 🍟_*
+-------------------------------
 
-
-~-=.-=.-=.-=.-=.-=.-=.~ *$* ~.=-.=-.=-.=-.=-.=-.=-~
-       _*🍤🐟 PEIXE E CAMARÃO 🐟🍤*_
-
-2 | *Tilapia c/ Camarão*
-_Tamanho_: *M* | R$ *29.99*
-
-10 | *File de Sardinha*
-_Tamanho_: *M* | R$ *19.99*
-
-
-~-=.-=.-=.-=.-=.-=.-=.~ *$* ~.=-.=-.=-.=-.=-.=-.=-~
-       _*🍟 FRITURAS 🍟*_
-
-6 | *Costelinha c/ Barbecue*
-_Tamanho_: *M* | R$ *20.99*
+6 | *Costelinha com Barbecue*
+_Tamanho_: *M* | R$ *21.0*
 
 7 | *Sobrecoxa com Alho e Manteiga*
-_Tamanho_: *M* | R$ *19.99*
+_Tamanho_: *M* | R$ *20.0*
 
+-------------------------------
+      _*🍤🐟 PEIXE E CAMARÃO 🐟🍤_*
+-------------------------------
 
-~-=.-=.-=.-=.-=.-=.-=.~ *$* ~.=-.=-.=-.=-.=-.=-.=-~
-       _*💸 ECONOMICAS TAMANHO (P) 💸*_
+2 | *Tilapia com Camarão*
+_Tamanho_: *M* | R$ *30.0*
+
+10 | *File de Sardinha*
+_Tamanho_: *M* | R$ *20.0*
+
+-------------------------------
+      _*💸 ECONOMICAS TAMANHO (P) 💸_*
+-------------------------------
 
 4 | *Almondegas*
-_Tamanho_: *Economico (P)* | R$ *9.99*
+_Tamanho_: *Economico (P)* | R$ *10.0*
 
 9 | *Ovo frito*
-_Tamanho_: *Economico (P)* | R$ *9.99*
+_Tamanho_: *Economico (P)* | R$ *10.0*
 
+-------------------------------
+      _*📆🍽 Promoção do Dia 🍽📆_*
+-------------------------------
 
-~-=.-=.-=.-=.-=.-=.-=.~ *$* ~.=-.=-.=-.=-.=-.=-.=-~
-       _*🧊🥤 BEBIDAS 🥤🧊*_
+1 | *Strogonoff*
+_Tamanho_: *M* | R$ *20.0*
+
+5 | *Baião de 2*
+_Tamanho_: *P* | R$ *20.0*
+
+-------------------------------
+      _*🧊🥤 BEBIDAS 🥤🧊_*
+-------------------------------
 
 3 | *Coca Cola*
-_Tamanho_: *Lata* | R$ *19.99*
+_Tamanho_: *Lata* | R$ *20.0*
 
 8 | *Fanta Laranja*
-_Tamanho_: *2 Litros* | R$ *19.99*
-
+_Tamanho_: *2 Litros* | R$ *20.0*
 
