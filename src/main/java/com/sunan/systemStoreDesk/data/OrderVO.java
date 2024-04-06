@@ -7,17 +7,27 @@ import com.sunan.systemStoreDesk.data.util.ValueObject;
 
 public class OrderVO extends ValueObject{
     
+    private Long idClient;
     private Date moment;
     private OrderStatus status;
     private Double value;
 
     public OrderVO() {}
 
-    public OrderVO(long id, String description, Date moment, OrderStatus status, Double value) {
+    public OrderVO(long id, String description, Long idClient, Date moment, OrderStatus status, Double value) {
         super(id, description);
+        this.idClient = idClient;
         this.moment = moment;
         this.status = status;
         this.value = value;
+    }
+
+    public Long getIdClient() {
+        return idClient;
+    }
+
+    public void setIdClient(Long idClient) {
+        this.idClient = idClient;
     }
 
     public Date getMoment() {

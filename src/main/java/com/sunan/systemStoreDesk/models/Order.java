@@ -7,10 +7,11 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "Order_entity")
+@Table(name = "Order_Entity")
 public class Order{
     
     @Id
@@ -28,6 +29,9 @@ public class Order{
     
     @Column(name = "value", nullable = false)
     private Double value;
+
+    @ManyToOne
+    private Client client;
 
     public Order() {}
 
