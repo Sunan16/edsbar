@@ -7,13 +7,12 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "Orders")
-public class Order{
+@Table(name = "payments")
+public class Payment {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,29 +21,24 @@ public class Order{
     @Column(name = "description")
     private String description;
 
+    @Column(name = "made", nullable = false)
+    private Boolean made;
+
     @Column(name = "moment", nullable = false)
     private Date moment;
 
-    @Column(name = "status", nullable = false)
-    private Integer status;
-    
-    @Column(name = "value", nullable = false)
-    private Double value;
+    // Relationships
 
-    //Relationships
+    @OneToOne
+    private Order order;
 
-    @ManyToOne
-    private Client client;
+    public Payment() {}
 
-    @OneToOne(mappedBy = "order")
-    private Payment payment;
-
-    public Order() {}
-
-    public Order(Date moment, Integer status, Double value) {
+    public Payment(Long id, String description, Boolean made, Date moment) {
+        this.id = id;
+        this.description = description;
+        this.made = made;
         this.moment = moment;
-        this.status = status;
-        this.value = value;
     }
 
     public Long getId() {
@@ -55,16 +49,12 @@ public class Order{
         return description;
     }
 
+    public Boolean getMade() {
+        return made;
+    }
+
     public Date getMoment() {
         return moment;
     }
 
-    public Integer getStatus() {
-        return status;
-    }
-
-    public Double getValue() {
-        return value;
-    }
-    
 }

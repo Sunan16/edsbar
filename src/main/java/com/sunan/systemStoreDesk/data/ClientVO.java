@@ -3,7 +3,7 @@ package com.sunan.systemStoreDesk.data;
 import com.sunan.systemStoreDesk.data.util.ValueObject;
 
 public class ClientVO extends ValueObject{
-
+    
     private String address;
     private String name;
     private String phone;

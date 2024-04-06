@@ -14,7 +14,7 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "Client")
+@Table(name = "Clients")
 public class Client {
     
     @Id
@@ -33,6 +33,8 @@ public class Client {
     @Column(name = "phone", nullable = false, unique = true)
     private String phone;
 
+    // Relationships
+    
     @JsonIgnore
     @OneToMany(mappedBy = "client")
 	private List<Order> orders = new ArrayList<>();

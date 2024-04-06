@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "Product")
+@Table(name = "Products")
 public class Product{
 
     @Id
@@ -32,6 +32,8 @@ public class Product{
 
     @Column(name = "stock", nullable = false)
     private int stock;
+
+    // Relationships
 
     public Product(){}
     
