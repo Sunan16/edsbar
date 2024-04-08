@@ -1,5 +1,6 @@
 package com.sunan.systemStoreDesk.models;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +16,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "Clients")
-public class Client {
+public class Client implements Serializable{
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

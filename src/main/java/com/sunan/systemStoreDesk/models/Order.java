@@ -1,5 +1,6 @@
 package com.sunan.systemStoreDesk.models;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import jakarta.persistence.Column;
@@ -13,7 +14,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "Orders")
-public class Order{
+public class Order implements Serializable{
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,6 +22,9 @@ public class Order{
 
     @Column(name = "description")
     private String description;
+
+    @Column(name = "address", nullable = false)
+    private String address;
 
     @Column(name = "moment", nullable = false)
     private Date moment;
@@ -41,10 +45,16 @@ public class Order{
 
     public Order() {}
 
-    public Order(Date moment, Integer status, Double value) {
+    public Order(Long id, String description, String address, Date moment, Integer status, Double value, Client client,
+            Payment payment) {
+        this.id = id;
+        this.description = description;
+        this.address = address;
         this.moment = moment;
         this.status = status;
         this.value = value;
+        this.client = client;
+        this.payment = payment;
     }
 
     public Long getId() {
@@ -53,6 +63,10 @@ public class Order{
 
     public String getDescription() {
         return description;
+    }
+
+    public String getAddress() {
+        return address;
     }
 
     public Date getMoment() {
@@ -65,6 +79,14 @@ public class Order{
 
     public Double getValue() {
         return value;
+    }
+
+    public Client getClient() {
+        return client;
+    }
+
+    public Payment getPayment() {
+        return payment;
     }
     
 }

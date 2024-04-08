@@ -1,5 +1,7 @@
 package com.sunan.systemStoreDesk.models;
 
+import java.io.Serializable;
+
 import com.sunan.systemStoreDesk.models.PK.OrderItemPK;
 
 import jakarta.persistence.EmbeddedId;
@@ -8,7 +10,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "orderItems")
-public class OrderItem {
+public class OrderItem implements Serializable{
 
     @EmbeddedId
 	private OrderItemPK id = new OrderItemPK();

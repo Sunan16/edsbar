@@ -65,5 +65,13 @@ public class ClientVO extends ValueObject{
             return false;
         return true;
     }
+    
+    @Override
+    public String toString() {
+        return super.toString().substring(0, super.toString().length()-1) + ",\n"
+        + "address: " + this.address + ",\n"
+        + "name: " + this.name + ",\n"
+        + "phone: " + this.phone + "]";
+    }
 
 }

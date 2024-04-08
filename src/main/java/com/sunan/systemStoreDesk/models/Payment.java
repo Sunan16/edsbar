@@ -1,5 +1,6 @@
 package com.sunan.systemStoreDesk.models;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import jakarta.persistence.Column;
@@ -12,7 +13,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "payments")
-public class Payment {
+public class Payment implements Serializable{
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

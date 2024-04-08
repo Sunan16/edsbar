@@ -8,6 +8,7 @@ import com.sunan.systemStoreDesk.data.util.ValueObject;
 public class OrderVO extends ValueObject{
     
     private Long idClient;
+    private String address;
     private Date moment;
     private OrderStatus status;
     private Double value;
@@ -54,4 +55,15 @@ public class OrderVO extends ValueObject{
         this.value = value;
     }
     
+    
+    @Override
+    public String toString() {
+        return super.toString().substring(0, super.toString().length()-1) + ",\n"
+        + "idClient: " + this.idClient + ",\n"
+        + "address: " + this.address + ",\n"
+        + "moment: " + this.moment + ",\n"
+        + "status: " + this.status + ",\n"
+        + "value: " + this.value + "]";
+    }
+
 }

@@ -1,15 +1,18 @@
 package com.sunan.systemStoreDesk.models;
 
+import java.io.Serializable;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "Products")
-public class Product{
+public class Product implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,6 +30,9 @@ public class Product{
     @Column(name = "price", nullable = false)
     private double price;
 
+    @Column(name = "priority", nullable = false)
+    private int priority;
+
     @Column(name = "size", nullable = false)
     private String size;
 
@@ -34,6 +40,9 @@ public class Product{
     private int stock;
 
     // Relationships
+
+    @ManyToOne
+    private Category category;
 
     public Product(){}
     
