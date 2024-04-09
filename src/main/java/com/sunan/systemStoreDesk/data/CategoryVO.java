@@ -8,7 +8,7 @@ public class CategoryVO extends ValueObject{
 
     public CategoryVO() {}
 
-    public CategoryVO(long id, String description, String name) {
+    public CategoryVO(Long id, String description, String name) {
         super(id, description);
         this.name = name;
     }

@@ -65,28 +65,58 @@ public class Order implements Serializable{
         return description;
     }
 
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public String getAddress() {
         return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public Date getMoment() {
         return moment;
     }
 
+    public void setMoment(Date moment) {
+        this.moment = moment;
+    }
+
     public Integer getStatus() {
         return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 
     public Double getValue() {
         return value;
     }
 
+    public void setValue(Double value) {
+        this.value = value;
+    }
+
     public Client getClient() {
         return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
     }
 
     public Payment getPayment() {
         return payment;
     }
+
+    public void setPayment(Payment payment) {
+        this.payment = payment;
+    }
+
+    
     
 }

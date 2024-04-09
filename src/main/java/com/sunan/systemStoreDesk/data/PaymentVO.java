@@ -6,25 +6,25 @@ import com.sunan.systemStoreDesk.data.util.ValueObject;
 
 public class PaymentVO extends ValueObject {
     
-    private Long idOrder;
+    private Long order;
     private Boolean made;
     private Date moment;
     
     public PaymentVO() {}
 
-    public PaymentVO(long id, String description, Long idOrder, Boolean made, Date moment) {
+    public PaymentVO(Long id, String description, Long order, Boolean made, Date moment) {
         super(id, description);
-        this.idOrder = idOrder;
+        this.order = order;
         this.made = made;
         this.moment = moment;
     }
 
     public Long getIdOrder() {
-        return idOrder;
+        return order;
     }
 
-    public void setIdOrder(Long idOrder) {
-        this.idOrder = idOrder;
+    public void setIdOrder(Long order) {
+        this.order = order;
     }
 
     public Boolean getMade() {
@@ -46,7 +46,7 @@ public class PaymentVO extends ValueObject {
     @Override
     public String toString() {
         return super.toString().substring(0, super.toString().length()-1) + ",\n"
-        + "idOrder: " + this.idOrder + ",\n"
+        + "order: " + this.order + ",\n"
         + "made: " + this.made + ",\n"
         + "moment: " + this.moment + "]";
     }

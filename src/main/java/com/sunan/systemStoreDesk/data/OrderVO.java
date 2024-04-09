@@ -7,7 +7,7 @@ import com.sunan.systemStoreDesk.data.util.ValueObject;
 
 public class OrderVO extends ValueObject{
     
-    private Long idClient;
+    private Long client;
     private String address;
     private Date moment;
     private OrderStatus status;
@@ -15,20 +15,20 @@ public class OrderVO extends ValueObject{
 
     public OrderVO() {}
 
-    public OrderVO(long id, String description, Long idClient, Date moment, OrderStatus status, Double value) {
+    public OrderVO(long id, String description, Long client, Date moment, OrderStatus status, Double value) {
         super(id, description);
-        this.idClient = idClient;
+        this.client = client;
         this.moment = moment;
         this.status = status;
         this.value = value;
     }
 
     public Long getIdClient() {
-        return idClient;
+        return client;
     }
 
-    public void setIdClient(Long idClient) {
-        this.idClient = idClient;
+    public void setIdClient(Long client) {
+        this.client = client;
     }
 
     public Date getMoment() {
@@ -59,7 +59,7 @@ public class OrderVO extends ValueObject{
     @Override
     public String toString() {
         return super.toString().substring(0, super.toString().length()-1) + ",\n"
-        + "idClient: " + this.idClient + ",\n"
+        + "client: " + this.client + ",\n"
         + "address: " + this.address + ",\n"
         + "moment: " + this.moment + ",\n"
         + "status: " + this.status + ",\n"

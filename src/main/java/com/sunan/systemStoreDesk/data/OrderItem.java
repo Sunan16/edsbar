@@ -2,32 +2,32 @@ package com.sunan.systemStoreDesk.data;
 
 public class OrderItem {
     
-    private Long idProduct;
-    private Long idOrder;
+    private Long product;
+    private Long order;
     private int quantity;
 
     public OrderItem(){}
 
-    public OrderItem(Long idProduct, Long idOrder, int quantity) {
-        this.idProduct = idProduct;
-        this.idOrder = idOrder;
+    public OrderItem(Long product, Long order, int quantity) {
+        this.product = product;
+        this.order = order;
         this.quantity = quantity;
     }
 
     public Long getIdProduct() {
-        return idProduct;
+        return product;
     }
 
-    public void setIdProduct(Long idProduct) {
-        this.idProduct = idProduct;
+    public void setIdProduct(Long product) {
+        this.product = product;
     }
 
     public Long getIdOrder() {
-        return idOrder;
+        return order;
     }
 
-    public void setIdOrder(Long idOrder) {
-        this.idOrder = idOrder;
+    public void setIdOrder(Long order) {
+        this.order = order;
     }
 
     public int getQuantity() {
@@ -42,8 +42,8 @@ public class OrderItem {
     public int hashCode() {
         final int prime = 31;
         int result = 1;
-        result = prime * result + ((idProduct == null) ? 0 : idProduct.hashCode());
-        result = prime * result + ((idOrder == null) ? 0 : idOrder.hashCode());
+        result = prime * result + ((product == null) ? 0 : product.hashCode());
+        result = prime * result + ((order == null) ? 0 : order.hashCode());
         return result;
     }
 
@@ -56,23 +56,23 @@ public class OrderItem {
         if (getClass() != obj.getClass())
             return false;
         OrderItem other = (OrderItem) obj;
-        if (idProduct == null) {
-            if (other.idProduct != null)
+        if (product == null) {
+            if (other.product != null)
                 return false;
-        } else if (!idProduct.equals(other.idProduct))
+        } else if (!product.equals(other.product))
             return false;
-        if (idOrder == null) {
-            if (other.idOrder != null)
+        if (order == null) {
+            if (other.order != null)
                 return false;
-        } else if (!idOrder.equals(other.idOrder))
+        } else if (!order.equals(other.order))
             return false;
         return true;
     }
 
     @Override
     public String toString() {
-        return "[Order: " + this.idOrder + "\n"
-        + "Product: " + this.idProduct + "\n"
+        return "[Order: " + this.order + "\n"
+        + "Product: " + this.product + "\n"
         + "Quantity: " + this.quantity + "]";
     }
 

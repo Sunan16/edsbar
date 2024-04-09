@@ -42,4 +42,28 @@ public class Category implements Serializable{
         this.product = product;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<Product> getProduct() {
+        return product;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
 }

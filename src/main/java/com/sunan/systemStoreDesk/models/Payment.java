@@ -50,12 +50,32 @@ public class Payment implements Serializable{
         return description;
     }
 
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public Boolean getMade() {
         return made;
     }
 
+    public void setMade(Boolean made) {
+        this.made = made;
+    }
+
     public Date getMoment() {
         return moment;
+    }
+
+    public void setMoment(Date moment) {
+        this.moment = moment;
+    }
+
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
     }
 
 }
